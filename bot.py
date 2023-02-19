@@ -18,6 +18,8 @@ import datetime
 from datetime import datetime
 from discord import ui
 
+#hola buenas, esto es un cambio, imaginaos que es importante
+
 intents = discord.Intents.all()
 intents.members = True
 
