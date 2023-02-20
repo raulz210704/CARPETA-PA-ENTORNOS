@@ -738,5 +738,11 @@ async def pruba2(ctx, member: discord.Member):
     else:
         dias = int(dias.content)
     await member.timeout(datetime.timedelta(days=dias))
+    
+    
+@bot.command()
+async def hola(ctx, member: discord.Member):
+    await member.send(f"{ctx.author.display_name} te envia saludos")
+    await ctx.send(f"se ha enviado un saludo a {member.display_name}")
 
 bot.run(TOKEN)
