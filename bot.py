@@ -738,5 +738,6 @@ async def pruba2(ctx, member: discord.Member):
     else:
         dias = int(dias.content)
     await member.timeout(datetime.timedelta(days=dias))
+    
 
 bot.run(TOKEN)
