@@ -744,5 +744,9 @@ async def pruba2(ctx, member: discord.Member):
 async def hola(ctx, member: discord.Member):
     await member.send(f"{ctx.author.display_name} te envia saludos")
     await ctx.send(f"se ha enviado un saludo a {member.display_name}")
+    
+@bot.command()
+async def adios(ctx):
+    await ctx.send(f"Que tengas un buen dia {ctx.author.display_name}")
 
 bot.run(TOKEN)
